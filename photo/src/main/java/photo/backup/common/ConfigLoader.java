@@ -27,7 +27,7 @@ public class ConfigLoader {
 
 			String jarPath = System.getProperty("java.class.path");
 			String configFile = jarPath.substring(0, jarPath.lastIndexOf("\\") + 1) + "setting.ini";
-			configFile = "D:\\backup\\setting.ini";
+			// configFile = "D:\\backup\\setting.ini";
 			prop = new Properties();
 			try (Reader r = new BackslashEscape(Files.newBufferedReader(
 					Paths.get(configFile), Charset.forName("UTF-8")))) {
